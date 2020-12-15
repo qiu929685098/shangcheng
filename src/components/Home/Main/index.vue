@@ -1,22 +1,17 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
+  props: ['mainList'],
   data() {
     return {};
   },
-
-  components: {},
-
-  computed: {},
-
-  mounted() {},
-
-  methods: {}
+  mounted() {
+    // console.log(1);
+    console.log(this.mainList);
+  }
 };
 </script>
 <style lang="scss" scoped></style>
