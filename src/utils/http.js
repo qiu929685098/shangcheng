@@ -10,7 +10,7 @@ const instance = axios.create({
 //   // 在发送请求之前做些什么
 //   // console.log(config);
 //   return config;
-// }, 
+// },
 // (error)=> {
 //   // 对请求错误做些什么
 //   return Promise.reject(error);
@@ -26,41 +26,42 @@ const instance = axios.create({
 //   return Promise.reject(error);
 // });
 
-
 //定义http模块
-const http  = {
+const http = {
   get(url, obj) {
-    return new Promise((resolve,reject)=>{
-      instance.get(url, {params: obj})
-        .then((res)=>{
-          if(res.data.status === "0"){
+    return new Promise((resolve, reject) => {
+      instance
+        .get(url, { params: obj })
+        .then(res => {
+          if (res.data.status === "0") {
             resolve(res.data);
-          }else {
+          } else {
             console.log(res.msg);
           }
         })
-        .catch((err)=>{
-          reject(err)
+        .catch(err => {
+          reject(err);
           console.log(err.msg);
-        })
-    })
+        });
+    });
   },
-  post(url,obj) {
-    return new Promise((resolve,reject)=>{
-      instance.post(url, obj)
-        .then((res)=>{
+  post(url, obj) {
+    return new Promise((resolve, reject) => {
+      instance
+        .post(url, obj)
+        .then(res => {
           // resolve(res.data);
-          if(res.data.status === "0"){
+          if (res.data.status === "0") {
             resolve(res.data);
-          }else {
+          } else {
             console.log(res.msg);
           }
         })
-        .catch((err)=>{
+        .catch(err => {
           reject(err);
           console.log(err.message);
-        })
-    })
+        });
+    });
   }
 };
 

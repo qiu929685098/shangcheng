@@ -30,29 +30,15 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   data() {
     return {
       value: ""
     };
   },
-  mounted() {
-    this.getSwiper();
-  },
-  methods: {
-    getSwiper() {
-      axios
-        .get("http://www.pudge.wang:3180/home/banner", {
-          params: {
-            ID: 12345
-          }
-        })
-        .then(res => {
-          this.swiperList = res.data.result.list;
-        });
-    }
-  }
+  mounted() {},
+  methods: {}
 };
 </script>
 <style lang="scss" scoped>

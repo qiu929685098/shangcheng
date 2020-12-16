@@ -26,8 +26,8 @@ Vue.use(SwipeItem);
 Vue.use(Search); //顶部搜索框
 Vue.use(Grid); //布局
 Vue.use(GridItem);
-Vue.use(Card);//商品列表
-Vue.use(List);//商品列表容器
+Vue.use(Card); //商品列表
+Vue.use(List); //商品列表容器
 
 Vue.config.productionTip = false;
 

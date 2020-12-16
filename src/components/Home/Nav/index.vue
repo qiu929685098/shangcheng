@@ -68,16 +68,16 @@ article {
   margin-bottom: 20px;
   position: relative;
   &:nth-of-type(1) {
-    background: #FFF6E3;
+    background: #fff6e3;
   }
   &:nth-of-type(2) {
-    background: #FCFFEF;
+    background: #fcffef;
   }
   &:nth-of-type(3) {
-    background: #F5F4FF;
+    background: #f5f4ff;
   }
   &:nth-of-type(4) {
-    background: #FDF8F6;
+    background: #fdf8f6;
   }
   .title {
     font-size: 16px;

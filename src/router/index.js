@@ -15,7 +15,8 @@ const routes = [
     children: [
       {
         path: "/home",
-        component: () => import("@/views/Home")
+        component: () => import("@/views/Home"),
+        keepAlive: true
       },
       {
         path: "/classify",

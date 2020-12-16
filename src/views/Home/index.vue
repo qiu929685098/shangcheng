@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Home />
+    <keep-alive>
+      <Home />
+    </keep-alive>
   </div>
 </template>
 
