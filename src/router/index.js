@@ -31,6 +31,11 @@ const routes = [
   {
     path: "/mine",
     component: () => import("@/views/Mine")
+  },
+  {
+    path: "/detail/:id",
+    component: () => import("@/views/Detail"),
+    props: true
   }
 ];
 

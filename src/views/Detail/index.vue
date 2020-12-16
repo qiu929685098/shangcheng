@@ -1,14 +1,15 @@
 <template>
   <div>
-    <Classify />
+    <Detail :detailId="id" />
   </div>
 </template>
 
 <script>
-import Classify from "@/components/Classify";
+import Detail from "@/components/Detail";
 export default {
+  props: ["id"],
   components: {
-    Classify
+    Detail
   }
 };
 </script>

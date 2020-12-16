@@ -17,6 +17,7 @@
           :title="item.productName"
           :thumb="item.imgUrl"
           :origin-price="item.originalPrice"
+          @click="goDetail(item.productId)"
         />
       </van-list>
     </div>
@@ -61,6 +62,9 @@ export default {
     },
     onLoad() {
       this.getMainList();
+    },
+    goDetail(id) {
+      this.$router.push("/detail/" + id);
     }
   }
 };
