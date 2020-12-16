@@ -39,11 +39,11 @@ Vue.use(Card); //商品列表
 Vue.use(List); //商品列表容器
 Vue.use(Sidebar); //分类页导航
 Vue.use(SidebarItem);
-Vue.use(Cell);//详情页单元格
-Vue.use(GoodsAction);//商品购买
+Vue.use(Cell); //详情页单元格
+Vue.use(GoodsAction); //商品购买
 Vue.use(GoodsActionButton);
 Vue.use(GoodsActionIcon);
-Vue.use(Sku);//商品规格
+Vue.use(Sku); //商品规格
 
 Vue.config.productionTip = false;
 
